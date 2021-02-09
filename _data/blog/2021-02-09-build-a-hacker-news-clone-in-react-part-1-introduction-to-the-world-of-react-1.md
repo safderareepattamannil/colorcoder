@@ -3,8 +3,8 @@ template: BlogPost
 path: /react-hackernews-2
 date: 2021-02-10T17:46:26.204Z
 title: >-
-  Build a Hacker News Clone in React (Part 1) - Introduction to the World of
-  React
+  Build A Hacker News Clone in React (Part 2) - What does Create-React-App
+  Include?
 metaDescription: React.js tutorial for beginners.
 thumbnail: /assets/hn.png
 ---
