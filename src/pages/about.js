@@ -16,16 +16,16 @@ export default function about() {
                         </p>
                         
                     </div>
-                    <p>This blog will about technology, code, culture and future trends. I am mostly interested in distributed systems and software architecture and how all the pieces fit into the big picture. You'll find me most weekends throwing
-                       together random pieces of code and prototyping random ideas from data pipelines for my home server to web applications. I am fascinated by the range of topics 
+                    <p>This blog will about technology, code, culture and future trends. I am mostly interested in distributed systems, software architecture and how all the pieces fit into the big picture. You'll find me most weekends throwing
+                       together code and prototyping small ideas from data pipelines for my home server to web applications. I am fascinated by the range of topics 
                        in software engineering and always end up finding myself stuck on what to learn next.</p>
 
                     <ul>
                         <li>In 2019, graduated from the University of Toronto with a degree in Mathematics and Physics.</li>
                         <li>In 2020, started working at Slalom Consulting. Started developing Trailless, an ephemeral filesharing application (to be released soon) with
                             my close friend <a href="https://github.com/nikzt">Bence Linder</a>. </li>
-                        <li>In 2021, started this blog to be able to write down my thoughts and share all the problems and tricks that I have picked up along the way. Also, I believe writing is an invaluable skill which 
-                            I could brush up on, so hopefully pushing out content will help.
+                        <li>In 2021, started this blog as a way to record my thoughts and document my ideas. I also would like to improve my technical writing skills, so this seemed
+                            like a third bird, one stone type of approach.
                         </li>
                     </ul>
 
