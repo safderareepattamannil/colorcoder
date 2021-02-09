@@ -15,27 +15,27 @@ const ContactPage = ({
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -contact">
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
+        <div className="post-thumbnail" style={{marginBottom: 0}}>
           <h1 className="post-title">Get in Touch</h1>
-          <p>Reach out to me with any of your Questions&rarr;</p>
+          <p>Reach out to me with any of your questions <br></br> or if you just want to chat <br></br>&rarr;</p>
         </div>
         <div>
-          <form className="form-container" action="mailto:safderareepattamannil@gmail.com" method="post">
+          <form className="form-container" action="#" method="post" data-netlify="true">
             <div>
-              <label htmlFor="w3lName">Name</label>
-              <input type="text" name="w3lName" id="w3lName"/>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name"/>
             </div>
             <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="w3lSender" id="w3lSender"/>
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="email"/>
             </div>
             <div>
-              <label htmlFor="w3lSubject">Subject</label>
-              <input type="text" name="w3lSubject" id="w3lSubject"/>
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="subject" id="subject"/>
             </div>
             <div>
-              <label htmlFor="w3lMessage">Message</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message"></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               <input type="submit" className="button -primary" style={{marginRight: 0}} />
