@@ -100,6 +100,26 @@ a {
   margin-bottom: 32px;
   align-items: center;
 }
+
+@media only screen and (max-width: 635px) {
+   .primary-content{
+     display: none;
+   }
+
+   .site-header{
+     flex-direction: column;
+     text-align: center;
+
+     .navigation{
+       flex-direction: column;
+       margin: 10px 10px;
+
+       a{
+         padding-bottom: 10px;
+       }
+     }
+   }
+}
 .site-title a {
   color: var(--primary-color);
   text-decoration: none;
