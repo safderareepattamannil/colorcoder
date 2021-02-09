@@ -105,6 +105,7 @@ a {
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
+  font-size: 30px;
 }
 .hero-header {
   padding: 0 0 64px;
@@ -112,7 +113,7 @@ a {
 }
 .headline {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 .button {
@@ -143,10 +144,11 @@ a {
   }
 }
 .primary-content {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 32px;
   line-height: 1.5;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 .post {
   padding: 0;

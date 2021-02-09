@@ -10,6 +10,11 @@ export default ({ children }) => {
         site {
           siteMetadata {
             title
+            home {
+              title
+              description
+            }
+            
           }
         }
       }
@@ -20,6 +25,10 @@ export default ({ children }) => {
       <header className="site-header">
         <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
+          <div 
+          className="primary-content" 
+          dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.description}}
+        />
         </div>
         <Navigation />
       </header>
