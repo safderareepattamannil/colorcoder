@@ -2,10 +2,10 @@
 template: BlogPost
 path: /react-hackernews-1
 date: 2021-02-09T17:41:56.379Z
-metaDescription: Tutorial series on React.js.
 title: >-
   Build a Hacker News Clone in React (Part 1) - Introduction to the World of
   React
+metaDescription: Tutorial series on React.js.
 thumbnail: /assets/hn.png
 ---
 ## What is React.js?
@@ -86,3 +86,5 @@ If it returns a version number(at the time of writing I got 6.14.11) means that 
 ## Next steps
 
 This seems like a good point to stop and take a breather. In the next post, we will start working on the project structure and developing the application layout. I'll catch you in the next one where we will be covering the structure of a create-react-app and all the bells and whistles included.
+
+[Continue to Part 2](https://www.colorcoder.dev/react-hackernews-2) &rarr;
