@@ -4,7 +4,7 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 export default () => (
   <ThemeToggler>
     {({ theme, toggleTheme }) => (
-      <label>
+      <label class="visibleDuringMobile">
         <input
           type="checkbox"
           className="theme-changer"
