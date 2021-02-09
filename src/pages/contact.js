@@ -20,7 +20,7 @@ const ContactPage = ({
           <p>Reach out to me with any of your questions <br></br> or if you just want to chat <br></br>&rarr;</p>
         </div>
         <div>
-          <form className="form-container" action="#" method="post" data-netlify="true">
+          <form className="form-container" action="POST" data-netlify="true">
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name"/>
