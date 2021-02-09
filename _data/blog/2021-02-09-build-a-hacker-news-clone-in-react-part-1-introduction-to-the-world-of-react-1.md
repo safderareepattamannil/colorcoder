@@ -136,6 +136,4 @@ Now, let's open up a terminal and run `npm start` within our directory and if al
 
 Now hopefully you have a high-level understanding of what each of the files represents. If you would like to read more, please refer to the Create React App [documentation](https://create-react-app.dev/docs/getting-started/). In the next tutorial, we will start building out our application and cover what JSX is.
 
-
-
-[Back to Part 1](https://www.colorcoder.dev/react-hackernews-1) &larr;
+&larr; [Back to Part 1](https://www.colorcoder.dev/react-hackernews-1)
