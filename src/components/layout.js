@@ -4,7 +4,8 @@ import Navigation from "../components/navigation";
 import "prismjs/themes/prism-okaidia.css";
 import BurgerIcon from "./burgerIcon";
 import Popup from "reactjs-popup";
-import Menu from "../components/mobileMenu"
+import Menu from "../components/mobileMenu";
+import Mailchimp from "react-mailchimp-form";
 
 export default ({ children }) => {
     const contentStyle = {
@@ -49,10 +50,32 @@ export default ({ children }) => {
                     {(close) => <Menu close={close} />}
                 </Popup>
                 <Navigation />
-                
             </header>
             {children}
             <footer className="site-footer">
+                <div className="subscribe-now">
+                    <h3>Posts Delivered To Your Inbox!</h3>
+                    <Mailchimp
+                        action="https://dev.us1.list-manage.com/subscribe/post?u=938d22ad3b959c88952bf5185&amp;id=a221c1d104"
+                        fields={[
+                            {
+                                name: "EMAIL",
+                                placeholder: "Email",
+                                type: "email",
+                                required: true,
+                            },
+                        ]}
+                        messages={{
+                            button: "Send it to me!",
+                            sending: "Sending...",
+                            success: "Thank you for subscribing!",
+                            error: "An unexpected internal error has occurred.",
+                            empty: "Please try again.",
+                            duplicate:
+                                "This email has already been subscribed.",
+                        }}
+                    />
+                </div>
                 <p>
                     &copy; {new Date().getFullYear()} Safder Areepattamannil
                     &bull; Crafted with{" "}
