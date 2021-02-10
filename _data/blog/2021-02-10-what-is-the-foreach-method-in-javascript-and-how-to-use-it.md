@@ -20,8 +20,7 @@ The structure of **forEach** is as follows. I have indicated the optional argume
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
 ```
 \
-\
-\
+
 
 The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.
 
@@ -31,6 +30,7 @@ for(let i =0; i < array.length; i++){
 	
 }
 ```
+\
 
 
 Let's take a look at the forEach syntax again.  
@@ -44,7 +44,7 @@ numbers.forEach(function(){
 	// code
 })
 ```
-
+|
 Here we can see that the forEach method takes a callback function. The callback function takes three arguments mentioned above. The current value, index and the array object itself.
 
 The current value is the value on that current iteration. This is the only required argument so let's call the argument something semantically correct. So a list of numbers, would have elements called number.
@@ -54,7 +54,7 @@ numbers.forEach(function(number){
 	// code
 })
 ```
-
+\
 Now we can add some logic to the function. Let's log to console for now.
 
 ```js
@@ -68,7 +68,7 @@ numbers.forEach(function(number){
 // logs 3
 // logs 4
 ```
-
+\
 #### We can also define the callback functions seperately for the forEach method.
 
 ```js
@@ -83,9 +83,9 @@ function findUser(user){
 users.forEach(findUser);
 // logs user found
 ```
-
+\
 ## What about the remaining optional arguments?
-
+\
 ### Index
 
 The first optional argument for the callback function is the index. The index is a representation of the current number of iteration. Equivalent to the **i** variable in a regular **for** loop, `for (let i=0; i < array.length; i++)`.
@@ -100,9 +100,9 @@ names.forEach(function(name,index){
 // logs 1 jack
 // logs 2 john
 ```
-
+\
 ##### Quick Aside: forEach callback an arrow function
-
+\
 My preffered method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
 
 ```js
@@ -115,7 +115,7 @@ array.forEach((element) => {
 
 This parameter is not used very often but **thisArg** refers to the context on which callback should be called. If you do not specify a **thisArg** parameter, the context that is referred to by the **this** keyword becomes the **[window](https://developer.mozilla.org/en-US/docs/Web/API/Window)**.
 
-Within your browser, the tab you are on is the window context as it executed the JavaScript code. The window can also be thought of as the outer most blobal object. 
+Within your browser, the tab you are on is the window context as it executed the JavaScript code. The window can also be thought of as the outermost global object. 
 
 Please keep in mind that you cannot use an arrow function if you want the context to be bound to thisArg instead of window. 
 
@@ -169,9 +169,9 @@ fruits.forEach(function(fruit){
 // logs banana
 // logs orange
 ```
-
+\
 ## When should you not use a forEach over a for loop?
-
+\
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
 For example, we want to break out of a loop when some search condition is met.
@@ -190,7 +190,7 @@ for(let i = 0; i < conditionalCheck.legnth; i++){
 // logs 2
 // logs 3
 ```
-
+\
 ## Conclusion
-
-This post should provide you the insights you need when deciding on what type of loop to use. As for performance between the two loops, the **for** loop is faster in comparison to the **forEach** loop. However, readability and maintanability of codebases should be a priority which the **forEach** can provide.
+\
+This post should provide you insights you need when deciding on what type of loop to use. As for performance between the two loops, the **for** loop is faster in comparison to the **forEach** loop. However, the readability and maintainability of codebases should be a priority which the **forEach** can provide.
