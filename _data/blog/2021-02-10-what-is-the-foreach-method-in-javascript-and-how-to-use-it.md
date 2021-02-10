@@ -29,9 +29,9 @@ for(let i =0; i < array.length; i++){
 }
 ```
 
-<br>
+
 Let's take a look at the forEach syntax again.  
-<br>
+
 
 ```js
 // Lets initialize an array called numbers
