@@ -108,7 +108,7 @@ array.forEach((element) => {
 
 This parameter is not used very often but **thisArg** refers to the context on which callback should be called. If you do not specify a **thisArg** parameter, the context that is referred to by the **this** keyword becomes the **[window](https://developer.mozilla.org/en-US/docs/Web/API/Window)**.
 
-Within your browser, the tab you are on is the window as it executed the JavaScript code. The window can also be thought of as the outer most blobal object. 
+Within your browser, the tab you are on is the window context as it executed the JavaScript code. The window can also be thought of as the outer most blobal object. 
 
 Please keep in mind that you cannot use an arrow function if you want the context to be bound to thisArg instead of window. 
 
