@@ -81,7 +81,7 @@ users.forEach(findUser);
 
 ### Index
 
-The first optional argument for the callback function is the index. Index is just a representation of the current index of iteration. Equivalent to the **i** variable in a regular **for** loop, `for (let i=0; i < array.length; i++)`.
+The first optional argument for the callback function is the index. The index is a representation of the current number of iteration. Equivalent to the **i** variable in a regular **for** loop, `for (let i=0; i < array.length; i++)`.
 
 ```js
 let names =['kate','jack','john']
