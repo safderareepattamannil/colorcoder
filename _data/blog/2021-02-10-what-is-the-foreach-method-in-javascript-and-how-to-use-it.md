@@ -96,7 +96,7 @@ names.forEach(function(name,index){
 
 ##### Quick Aside: forEach callback an arrow function
 
-My preffered method of writing function is as arrow functions. We can replace the callback function with an arrow function. But keep
+My preffered method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
 
 ```js
 array.forEach((element) => {
