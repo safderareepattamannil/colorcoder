@@ -12,7 +12,7 @@ thumbnail: /assets/hn.png
 
 Prior to starting building, let's go over some of the files that come with the create react app. Within your favourite text editor let's take a look at the files (I use Visual Studio Code, which has a plethora of plugins just for React).
 
-If you haven't read the first part, make sure you do that first,  **[click here](https://colorcoder.hashnode.dev/build-a-hacker-news-clone-in-react-part-1-introduction-to-the-world-of-react)** ! 
+If you haven't read the first part, make sure you do that first,  **[click here](https://www.colorcoder.dev/react-hackernews-1)** ! 
 
 ### Folder Structure
 
