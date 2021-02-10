@@ -38,9 +38,9 @@ numbers.forEach(function(){
 })
 ```
 
-Here we can see that the forEach method takes a callback function. The callback function takes three arguments are mentioned above the current value, index and the array object itself.
+Here we can see that the forEach method takes a callback function. The callback function takes three arguments mentioned above. The current value, index and the array object itself.
 
-The current value is just the current value on that the current iteration is on. This is the only required argument so let's call the argument something semantically correct. So a list of numbers, have elements called number.
+The current value is the value on that current iteration. This is the only required argument so let's call the argument something semantically correct. So a list of numbers, would have elements called number.
 
 ```js
 numbers.forEach(function(number){
