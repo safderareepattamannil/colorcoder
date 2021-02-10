@@ -77,7 +77,7 @@ users.forEach(findUser);
 // logs user found
 ```
 
-## What about the optional arguments?
+## What about the remaining optional arguments?
 
 ### Index
 
