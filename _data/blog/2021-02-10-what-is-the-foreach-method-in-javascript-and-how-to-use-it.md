@@ -14,11 +14,13 @@ The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.
 
+
+
 ```js
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
 ```
 
-<br>
+
 
 The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.
 
