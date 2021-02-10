@@ -17,6 +17,22 @@ If you haven't read the first part, make sure you do that first,  **[click here]
 ### Folder Structure
 
 ```
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── build
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
 
 ```
 
