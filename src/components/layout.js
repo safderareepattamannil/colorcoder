@@ -76,9 +76,16 @@ export default ({ children }) => {
                         }}
                     />
                 </div>
-                <p>
+                <p className="siteFooter-p-desktop">
                     &copy; {new Date().getFullYear()} Safder Areepattamannil
                     &bull; Crafted with{" "}
+                    <span role="img" aria-label="love">
+                        ❤️
+                    </span>
+                </p>
+                <p className="siteFooter-p-mobile">
+                    &copy; {new Date().getFullYear()} Safder Areepattamannil <br></br>
+                    Crafted with{" "}
                     <span role="img" aria-label="love">
                         ❤️
                     </span>
