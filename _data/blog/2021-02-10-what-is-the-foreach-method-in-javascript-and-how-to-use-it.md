@@ -67,7 +67,7 @@ numbers.forEach(function(number){
 // logs 4
 ```
 
-#### We can also define the callback functions seperately for the forEach method.
+#### We can also define the callback functions separately for the forEach method.
 
 ```js
 let users = ['user1','user2','user3']
@@ -100,7 +100,7 @@ names.forEach(function(name,index){
 ```
 
 ##### Quick Aside: forEach callback an arrow function
-My preffered method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
+My preferred method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
 
 ```js
 array.forEach((element) => {
