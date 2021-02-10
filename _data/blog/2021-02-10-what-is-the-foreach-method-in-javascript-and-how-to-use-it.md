@@ -62,7 +62,7 @@ numbers.forEach(function(number){
 // logs 4
 ```
 
-#### We can also define the callback functions the forEach method.
+#### We can also define the callback functions seperately for the forEach method.
 
 ```js
 let users = ['user1','user2','user3']
