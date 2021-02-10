@@ -55,7 +55,7 @@ A gitignore files is where you specify which files you do not want added to your
 ![index.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612832203601/gI-9AGEVo.png) The public folder stores the static files that are part of the project. It includes a file called index.html which is the entry point for our React project. The index.html file is a pretty straightforward HTML file. The section to note is is 
 
 ```html
-
+<div id="root"></div>
 ```
 
 This is the div where our React components are injected into, more coming on this later.
@@ -82,14 +82,14 @@ In React we use **ES6** syntax to import modules. Which follows `import alias fr
 
 In the imports above, we see that we import,
 
-```js
-
+```javascript
+import ReactDOM from 'react-dom'
 ```
 
 The react-dom package provides methods to manipulate the DOM. The render method takes two arguments, the component to render and the container or element we want to render the component into. 
 
-```js
-
+```javascript
+ReactDOM.render(element, container[, callback])
 ```
 
 This is how our index.html gets populated with the React components.
@@ -98,22 +98,39 @@ This is how our index.html gets populated with the React components.
 
 The reportWebVitals file is a file that allows you to measure and analyze the performance of your application. But we won't be using this in our project so you can delete the file but make sure you also remove the import statement and the method call within index.js
 
-```js
-
+```javascript
+// Remove these lines from index.js
+import reportWebVitals from './reportWebVitals';
+reportWebVitals();
 ```
 
 #### App.js
 
 ![app.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612832119939/xFbJXRNq0.png) The **App.js** is the main container for all your components. You can imagine this as your home page. This file is an example of a Functional Component, we can tell this is a functional component by the structure which is as follows.
 
-```js
+```javascript
+function App() {
+  return(
+  )
+}
 
+export default App;
 ```
 
 All a functional component is a javascript function that returns some HTML. For our project let's clear out some of the code here which we do not need. Let's remove everything between `<div className="App> </div>` as well as the import logo statement. You should be left with just. Let's throw in a hello world to make sure it works later.
 
-```js
+```javascript
+import './App.css';
 
+function App() {
+  return (
+    <div className="App">
+        <h1>Hello World</h1>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 You can now go ahead and delete the `logo.svg` , we won't be needing that either.
