@@ -78,7 +78,9 @@ If it returns a version number(at the time of writing I got 6.14.11) means that 
 3. Open a terminal and cd into a folder you would like to set up your project in then run the following commands. What this will do use npx which from npm to install the CRA dependencies from the npm registry into a folder called hackernews. Then npm start will spin up a local server on port 3000 which has live reload so any changes you make in the code will be reflected here.
 
 ```shell
-
+npx create-react-app hackernews
+cd hackernews
+npm start
 ```
 
 ![cra.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612806200845/Dj8ybv94U.png)
