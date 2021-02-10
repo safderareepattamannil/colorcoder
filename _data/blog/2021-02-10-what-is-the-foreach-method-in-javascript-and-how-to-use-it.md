@@ -8,6 +8,8 @@ metaDescription: >-
   Javascript, forEach can be used for both arrays and objects.
 thumbnail: /assets/Copy of Clearance Sale Blog Banner.png
 ---
+## How does forEach() work?
+
 The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method is used to iterate over an array or object. Then used to either extract, manipulate or transform the data in some way.
 
 The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.
@@ -16,7 +18,7 @@ The structure of **forEach** is as follows. I have indicated the optional argume
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
 ```
 
-## How does forEach() work?
+<br>
 
 The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.
 
@@ -27,7 +29,9 @@ for(let i =0; i < array.length; i++){
 }
 ```
 
-Let's take a look at the forEach syntax again.
+<br>
+Let's take a look at the forEach syntax again.  
+<br>
 
 ```js
 // Lets initialize an array called numbers
