@@ -6,7 +6,7 @@ title: What is the forEach method in Javascript and How to Use It?
 metaDescription: >-
   This post describes the functionality of the forEach array method in
   Javascript, forEach can be used for both arrays and objects.
-thumbnail: /assets/Copy of Clearance Sale Blog Banner.png
+thumbnail: /assets/foreach.png
 ---
 The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method is used to iterate over an array or object. Then used to either extract, manipulate or transform the data in some way.
 
