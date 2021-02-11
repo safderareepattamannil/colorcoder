@@ -14,6 +14,8 @@ Prior to starting building, let's go over some of the files that come with the c
 
 If you haven't read the first part, make sure you do that first,  **[click here](https://www.colorcoder.dev/react-hackernews-1)** ! 
 
+You can find the source code for this project at [Github](https://github.com/safderareepattamannil/hackernewclone-react-tutorial/tree/part-2). There is a different branch for each part incase you missed a semi-colon or bracket (which I tend to do whenever I follow a tutorial).
+
 ### Folder Structure
 
 ```
