@@ -91,7 +91,7 @@ names.forEach(function(name,index){
 ```
 ###
 
-##### Quick Aside: forEach callback an arrow function
+#### Quick Aside: forEach callback an arrow function
 
 My preferred method of writing functions is as arrow functions. We can replace the callback function with an arrow function.   
 
