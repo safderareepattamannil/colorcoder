@@ -161,8 +161,6 @@ fruits.forEach(function(fruit){
 ```
 
 ## When should you not use a forEach over a for loop?
-
-\
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
 For example, we want to break out of a loop when some search condition is met.
@@ -182,9 +180,8 @@ for(let i = 0; i < conditionalCheck.legnth; i++){
 // logs 1
 // logs 2
 // logs 3
-```
+```  
 
 ## Conclusion
 
-\
 This post should provide you insights you need when deciding on what type of loop to use. As for performance between the two loops, the **for** loop is faster in comparison to the **forEach** loop. However, the readability and maintainability of codebases should be a priority which the **forEach** can provide.
