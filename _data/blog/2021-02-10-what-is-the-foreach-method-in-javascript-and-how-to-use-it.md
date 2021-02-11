@@ -72,7 +72,7 @@ users.forEach(findUser);
 
 ### Index
 
-The first optional argument for the callback function is the index. The index is a representation of the current number of iteration. Equivalent to the **i** variable in a regular **for** loop, `for (let i=0; i < array.length; i++)`.
+The first optional argument for the callback function is the index. The index is a representation of the current number of iteration. Equivalent to the **i** variable in a regular **for** loop, `for (let i=0; i < array.length; i++)`.  
 
 ```js
 let names =['kate','jack','john']
@@ -87,7 +87,7 @@ names.forEach(function(name,index){
 
 ##### Quick Aside: forEach callback an arrow function
 
-My preferred method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
+My preferred method of writing functions is as arrow functions. We can replace the callback function with an arrow function.   
 
 ```js
 array.forEach((element) => {
@@ -102,6 +102,8 @@ This parameter is not used very often but **thisArg** refers to the context on w
 Within your browser, the tab you are on is the window context as it executed the JavaScript code. The window can also be thought of as the outermost global object. 
 
 Please keep in mind that you cannot use an arrow function if you want the context to be bound to thisArg instead of window. 
+
+
 
 ```js
 array.forEach(function(item)=>{
@@ -120,6 +122,8 @@ array.forEach(function(item)=>{
 
 1. forEach keeps all variables inside the scope of the callback function. So variables outside retain the value. Below we can see that the **name** variable retains block scope for the callback function.
 
+
+
 ```js
 const name = 'john'
 const arrNames = ['jack','jill','june']
@@ -134,6 +138,8 @@ console.log(name)
 ```
 
 2. Prevent boundary errors when we access elements by indexing using the **for** loop. Let's say we wanted to iterate over the full list but did not put the correct range in the loop, we can prevent this by using forEach.
+
+
 
 ```js
 let fruits = ['apple','banana','orange'];
@@ -160,6 +166,8 @@ fruits.forEach(function(fruit){
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
 For example, we want to break out of a loop when some search condition is met.
+
+
 
 ```js
 let conditionalCheck = [1,2,3,null,4,5,6]
