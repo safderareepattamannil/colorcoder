@@ -103,8 +103,6 @@ Within your browser, the tab you are on is the window context as it executed the
 
 Please keep in mind that you cannot use an arrow function if you want the context to be bound to thisArg instead of window. 
 
-
-
 ```js
 array.forEach(function(item)=>{
 	console.log(this === window) // true
@@ -122,8 +120,6 @@ array.forEach(function(item)=>{
 
 1. forEach keeps all variables inside the scope of the callback function. So variables outside retain the value. Below we can see that the **name** variable retains block scope for the callback function.
 
-
-
 ```js
 const name = 'john'
 const arrNames = ['jack','jill','june']
@@ -138,8 +134,6 @@ console.log(name)
 ```
 
 2. Prevent boundary errors when we access elements by indexing using the **for** loop. Let's say we wanted to iterate over the full list but did not put the correct range in the loop, we can prevent this by using forEach.
-
-
 
 ```js
 let fruits = ['apple','banana','orange'];
@@ -161,11 +155,10 @@ fruits.forEach(function(fruit){
 ```
 
 ## When should you not use a forEach over a for loop?
+
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
 For example, we want to break out of a loop when some search condition is met.
-
-
 
 ```js
 let conditionalCheck = [1,2,3,null,4,5,6]
@@ -180,7 +173,9 @@ for(let i = 0; i < conditionalCheck.legnth; i++){
 // logs 1
 // logs 2
 // logs 3
-```  
+```
+
+## \### 
 
 ## Conclusion
 
