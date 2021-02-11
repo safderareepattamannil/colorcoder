@@ -17,6 +17,7 @@ The structure of **forEach** is as follows. I have indicated the optional argume
 ```js
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
 ```
+###
 
 The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.  Let's take a look at the forEach syntax again.    
 
@@ -28,6 +29,7 @@ numbers.forEach(function(){
 	// code
 })
 ```
+###
 
 Here we can see that the forEach method takes a callback function. The callback function takes three arguments mentioned above. The current value, index and the array object itself.  
 
@@ -38,6 +40,7 @@ numbers.forEach(function(number){
 	// code
 })
 ```
+###
 
 Now we can add some logic to the function. Let's log to console for now.
 
@@ -52,6 +55,7 @@ numbers.forEach(function(number){
 // logs 3
 // logs 4
 ```
+###
 
 #### We can also define the callback functions separately for the forEach method.
 
@@ -67,6 +71,7 @@ function findUser(user){
 users.forEach(findUser);
 // logs user found
 ```
+###
 
 ## What about the remaining optional arguments?
 
@@ -84,6 +89,7 @@ names.forEach(function(name,index){
 // logs 1 jack
 // logs 2 john
 ```
+###
 
 ##### Quick Aside: forEach callback an arrow function
 
@@ -94,6 +100,7 @@ array.forEach((element) => {
 	console.log(element);
 })
 ```
+###
 
 ### thisArg
 
@@ -115,6 +122,7 @@ array.forEach(function(item)=>{
 	console.log(this == array) //true
 }, array)
 ```
+###
 
 ## When should you use forEach over a for loop?
 
@@ -132,6 +140,7 @@ arrNames.forEach(function(name){
 console.log(name)
 // logs name
 ```
+###
 
 2. Prevent boundary errors when we access elements by indexing using the **for** loop. Let's say we wanted to iterate over the full list but did not put the correct range in the loop, we can prevent this by using forEach.
 
@@ -153,6 +162,7 @@ fruits.forEach(function(fruit){
 // logs banana
 // logs orange
 ```
+###
 
 ## When should you not use a forEach over a for loop?
 
@@ -175,8 +185,7 @@ for(let i = 0; i < conditionalCheck.legnth; i++){
 // logs 3
 ```
 
-## \### 
+###
 
 ## Conclusion
-
-This post should provide you insights you need when deciding on what type of loop to use. As for performance between the two loops, the **for** loop is faster in comparison to the **forEach** loop. However, the readability and maintainability of codebases should be a priority which the **forEach** can provide.
+This post should provide you insights you need when deciding on what type of loop to use. As for performance between the two loops, the for loop is faster in comparison to the forEach loop. However, the readability and maintainability of codebases should be a priority which the forEach can provide.
