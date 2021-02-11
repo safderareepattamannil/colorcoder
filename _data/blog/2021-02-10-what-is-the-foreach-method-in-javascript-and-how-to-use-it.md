@@ -8,31 +8,17 @@ metaDescription: >-
   Javascript, forEach can be used for both arrays and objects.
 thumbnail: /assets/Copy of Clearance Sale Blog Banner.png
 ---
-## How does forEach() work?
-
 The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method is used to iterate over an array or object. Then used to either extract, manipulate or transform the data in some way.
 
-The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.
+The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.  
 
-
+## How does the forEach() method work?
 
 ```js
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
 ```
-\
 
-
-The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.
-
-```js
-// The usual for loop
-for(let i =0; i < array.length; i++){
-	
-}
-```
-
-Let's take a look at the forEach syntax again.  
-
+The forEach method loops through the given array however unlike the common **for** loop it passes a **callback function** for each **non-empty** element of the array.  Let's take a look at the forEach syntax again.    
 
 ```js
 // Lets initialize an array called numbers
@@ -43,9 +29,9 @@ numbers.forEach(function(){
 })
 ```
 
-Here we can see that the forEach method takes a callback function. The callback function takes three arguments mentioned above. The current value, index and the array object itself.
+Here we can see that the forEach method takes a callback function. The callback function takes three arguments mentioned above. The current value, index and the array object itself.  
 
-The current value is the value on that current iteration. This is the only required argument so let's call the argument something semantically correct. So a list of numbers, would have elements called number.
+The current value is the value on that current iteration. This is the only required argument so let's call the argument something semantically correct. A list of numbers, would have elements called number.  
 
 ```js
 numbers.forEach(function(number){
@@ -100,6 +86,7 @@ names.forEach(function(name,index){
 ```
 
 ##### Quick Aside: forEach callback an arrow function
+
 My preferred method of writing functions is as arrow functions. We can replace the callback function with an arrow function. 
 
 ```js
@@ -168,6 +155,7 @@ fruits.forEach(function(fruit){
 ```
 
 ## When should you not use a forEach over a for loop?
+
 \
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
@@ -189,5 +177,6 @@ for(let i = 0; i < conditionalCheck.legnth; i++){
 ```
 
 ## Conclusion
+
 \
 This post should provide you insights you need when deciding on what type of loop to use. As for performance between the two loops, the **for** loop is faster in comparison to the **forEach** loop. However, the readability and maintainability of codebases should be a priority which the **forEach** can provide.
