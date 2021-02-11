@@ -1,4 +1,4 @@
-export default  [
+const linkList= [
             ` <a
         target="_blank"
         href="https://www.amazon.com/gp/product/0141988517/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0141988517&linkCode=as2&tag=colorcoder09-20&linkId=5cc57f222c74973a4bfa82feaff75994"
@@ -34,3 +34,5 @@ export default  [
      `<a target="_blank"  href="https://www.amazon.com/gp/product/0684824299/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0684824299&linkCode=as2&tag=colorcoder09-20&linkId=309ffe0ff30a250729520e52da2f27b3"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0684824299&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=colorcoder09-20" ></a>`
   
 ]
+
+export default linkList;
