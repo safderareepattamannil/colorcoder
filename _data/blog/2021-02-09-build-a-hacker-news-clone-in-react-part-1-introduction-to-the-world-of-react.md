@@ -8,13 +8,21 @@ title: >-
 metaDescription: Tutorial series on React.js.
 thumbnail: /assets/hn.png
 ---
-## What is React.js?
 
 ![1_yjH3SiDaVWtpBX0g_2q68g.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612810012755/wGckgPaYa.png)
 
 If you haven't already heard of React, most likely you've been living under a rock. React is a JavaScript library created by Facebook, it used to create beautiful functional user interfaces using a **component-based architecture** (we'll get to that in a second).
 
-React allows us to use reusable pieces of code to build web applications. Before React and other frontend frameworks we were limited to using 'vanilla Javascript' and libraries such as jQuery to build out applications. This meant long development cycles and hard to catch errors and bugs. React can also be used to create cross-platform mobile applications via React Native (hopefully a tutorial on Native coming soon as well). React is used by multiple large companies which include Uber, Airbnb, Pinterest, Instagram and Netflix. 
+**Hacker News Clone Series:**
+
+Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
+Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
+Part 3: [JSX and adding CSS To Your React App](link)
+
+## What is React.js?
+
+
+React allows us to use reusable pieces of code to build web applications. Before React and other frontend frameworks, we were limited to using 'vanilla Javascript' and libraries such as jQuery to build out applications. This meant long development cycles and hard to catch errors and bugs. React can also be used to create cross-platform mobile applications via React Native (hopefully a tutorial on Native coming soon as well). React is used by multiple large companies which include Uber, Airbnb, Pinterest, Instagram and Netflix. 
 
 If those weren't good enough reasons to learn React, according to the [2020 Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey/2020). React.js is catching up to ASP.NET as the most loved and more importantly, is the **MOST WANTED** web framework technology amongst employers.
 
@@ -34,11 +42,11 @@ I want you to be able to create other similar applications as soon as you finish
 
 I will be including all the source code on GitHub in case you get stuck anywhere. The source code will be split up by individual branches per tutorial. When I first started I always found that I was getting stuck in tutorials because I would miss one word then my whole application would stop running. This should help you have a reference to make sure you are on the right track. 
 
-This series will cover the following React topics in-depth and few other topics a swell.
+This series will cover the following React topics:
 
 1. Create-React-App 
 2. JSX
-3. Functional Components vs Class based Components (although we will be focusing on Functional in this tutorial series)
+3. Functional Components vs Class-based Components (although we will be focusing on Functional in this tutorial series)
 4. Props
 5. State handling with useState
 6. useEffect
@@ -48,7 +56,7 @@ This series will cover the following React topics in-depth and few other topics 
 
 ### What are components?
 
-A React application is made up of multiple components. Components are simply reusable bits of code, they are almost like functions but work in isolation and when React renders it to the DOM it returns an HTML element. Components come in two types, Class based components and Functional components. We will cover those two in a later post. A component can have other components inside it, this is called component nesting.
+A React application is made up of multiple components. Components are simply reusable bits of code, they are almost like functions but work in isolation and when React renders it to the DOM it returns an HTML element. Components come in two types, Class-based components and Functional components. We will cover those two in a later post. A component can have other components inside it, this is called component nesting.
 
 ### How to think in Components?
 
@@ -56,7 +64,7 @@ A React application is made up of multiple components. Components are simply reu
 
 **Step one** is to decide how we want to split up the website into components. Looking for distinct sections. We can see that there is a clear Navigation bar, a content area and a footer. This can be our starting point.
 
-![highlightedcomponents.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612806207898/1WtQ0QlTw.png) **Step two** is to look for repeating patterns. Look for parts of the layout where something appears consistently. We notice that each post has the same layout, it includes an article number, a title, an author, date, upvote button, url, etc. We can make this into a component called Post.
+![highlightedcomponents.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612806207898/1WtQ0QlTw.png) **Step two** is to look for repeating patterns. Look for parts of the layout where something appears consistently. We notice that each post has the same layout, it includes an article number, a title, an author, date, upvote button, URL, etc. We can make this into a component called Post.
 
 ![highlightedposts.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612806217581/MBV640sXK.png)
 
@@ -68,13 +76,13 @@ The only things you need to be comfortable with before diving into React. You sh
 
 # Project Setup
 
-We will be using **Create React App** (CRA), CRA is an environment used for learning React but can be easily used for simple to medium scale React applications as well. It allows us to use the latest JavaScript features and does all your building for you. This means you can sit back, relax and focus on the fun part of coding instead of spending time on setup. CRA uses Babel and Webpack to build your app but more on that later (this is called a tool chain). 
+We will be using **Create React App** (CRA), CRA is an environment used for learning React but can be easily used for simple to medium scale React applications as well. It allows us to use the latest JavaScript features and does all your building for you. This means you can sit back, relax and focus on the fun part of coding instead of spending time on setup. CRA uses Babel and Webpack to build your app but more on that later (this is called a toolchain). 
 
 1. The first thing you will need to do is to install Node. You can check if you have Node installed by opening a terminal and running `npm --version`.
 
 If it returns a version number(at the time of writing I got 6.14.11) means that you have Node installed. If you do not have Node installed you can download it directly from [nodejs.org](https://nodejs.org/en/). Once you have run through the installation, you can run the terminal command to ensure it has been set up correctly.
 
-2. Once Node is installed, it will come with npm. Npm is a package manager for Javascript and allows us to use third party packages and libraries in our applications. You'll be using this al ot so if you have the time you should skim the [npm documentation](https://docs.npmjs.com/getting-started), this will help you in the current and future projects. Now we start our project setup. 
+2. Once Node is installed, it will come with npm. Npm is a package manager for Javascript and allows us to use third-party packages and libraries in our applications. You'll be using this alot so if you have the time you should skim the [npm documentation](https://docs.npmjs.com/getting-started), this will help you in the current and future projects. Now we start our project setup. 
 3. Open a terminal and cd into a folder you would like to set up your project in then run the following commands. What this will do use npx which from npm to install the CRA dependencies from the npm registry into a folder called hackernews. Then npm start will spin up a local server on port 3000 which has live reload so any changes you make in the code will be reflected here.
 
 ```shell
