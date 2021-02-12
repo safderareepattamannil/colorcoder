@@ -3,7 +3,7 @@ template: BlogPost
 path: /react-hackernews-2
 date: 2021-02-10T17:46:26.204Z
 title: >-
-  Build A Hacker News Clone in React (Part 2) - What does Create-React-App
+  Build A Hacker News Clone in React (Part 2) - What does Create React App
   Include?
 metaDescription: React.js tutorial for beginners.
 thumbnail: /assets/hn.png
@@ -14,7 +14,7 @@ Prior to starting building, let's go over some of the files that come with the c
 
 If you haven't read the first part, make sure you do that first,  **[click here](https://www.colorcoder.dev/react-hackernews-1)** ! 
 
-You can find the source code for this project at [Github](https://github.com/safderareepattamannil/hackernewclone-react-tutorial/tree/part-2). There is a different branch for each part incase you missed a semi-colon or bracket (which I tend to do whenever I follow a tutorial).
+You can find the source code for this project at [Github](https://github.com/safderareepattamannil/hackernewclone-react-tutorial/tree/part-2). There is a different branch for each part in case you missed a semi-colon or bracket (which I tend to do whenever I follow a tutorial).
 
 ### Folder Structure
 
@@ -35,7 +35,6 @@ You can find the source code for this project at [Github](https://github.com/saf
     ├── index.css
     ├── index.js
     ├── logo.svg
-
 ```
 
 Let's explore each of these files and their functionality.
@@ -66,7 +65,7 @@ Let's cover the two most important parts of this file. Starting with the depende
 
 ### .gitignore
 
-A gitignore files is where you specify which files you do not want added to your Github. This is usually done so that you don't accidentally end up uploading sensitive information such as passwords and API keys to public places. In our case, we don't want to upload all the dependencies to source control, we can use the `npm install` command to install dependencies from the package.json file.
+A gitignore file is where you specify which files you do not want to be added to your Github repository. This is usually done so that you don't accidentally end up uploading sensitive information such as passwords and API keys to public places. In our case, we don't want to upload all the dependencies to source control, we can use the `npm install` command to install dependencies from the package.json file.
 
 ### public/
 
