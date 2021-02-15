@@ -12,7 +12,12 @@ thumbnail: /assets/hn.png
 
 Prior to starting building, let's go over some of the files that come with the create react app. Within your favourite text editor let's take a look at the files (I use Visual Studio Code, which has a plethora of plugins just for React).
 
-If you haven't read the first part, make sure you do that first,  **[click here](https://www.colorcoder.dev/react-hackernews-1)** ! 
+
+**Hacker News Clone Series:**
+
+Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
+Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
+Part 3: [JSX and adding CSS To Your React App](link)
 
 You can find the source code for this project at [Github](https://github.com/safderareepattamannil/hackernewclone-react-tutorial/tree/part-2). There is a different branch for each part in case you missed a semi-colon or bracket (which I tend to do whenever I follow a tutorial).
 
