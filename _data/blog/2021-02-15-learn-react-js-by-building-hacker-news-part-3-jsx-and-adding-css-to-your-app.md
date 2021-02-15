@@ -8,6 +8,7 @@ title: >-
 metaDescription: >-
   In this article, you will start building out your React application and get
   into the most important concept in React, Javascript XML (JSX).
+thumbnail: /assets/hn.png
 ---
 In this article, you will start building out your React application and get into the most important concept in React, Javascript XML (JSX).
 
