@@ -10,9 +10,18 @@ thumbnail: /assets/foreach.png
 ---
 The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method is used to iterate over an array or object. Then used to either extract, manipulate or transform the data in some way.
 
+## Table of Contents
+- <a href="#forEach-method-work">How does the forEach() method work?</a>
+- <a href="#optional-arguments?
+">What about the remaining optional arguments?
+</a>
+- <a href="#When should you use forEach over a for loop?
+">How does the forEach() method work?</a>
+
+
 The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.  
 
-## How does the forEach() method work?
+<h2 name="forEach-method-work"> How does the forEach() method work? </h2>
 
 ```js
 array.forEach(function(currentValue, index [optional], array [optional]), thisArg[optional])
