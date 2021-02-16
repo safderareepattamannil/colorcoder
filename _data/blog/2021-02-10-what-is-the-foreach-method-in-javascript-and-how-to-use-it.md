@@ -12,11 +12,11 @@ The [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 ## Table of Contents
 - <a href="#forEach-method-work">How does the forEach() method work?</a>
-- <a href="#optional-arguments?
+- <a href="#optional-arguments
 ">What about the remaining optional arguments?
 </a>
-- <a href="#When should you use forEach over a for loop?
-">How does the forEach() method work?</a>
+- <a href="#when-to-use">When should you use forEach over a for loop?</a>
+- <a href="#when-not-to-use">When should you not use a forEach over a for loop?</a>
 
 
 The structure of **forEach** is as follows. I have indicated the optional arguments for the function as well.  
@@ -77,7 +77,7 @@ users.forEach(findUser);
 // logs user found
 ```
 
-## What about the remaining optional arguments?
+<h2 name="optional-arguments">What about the remaining optional arguments?<h2>
 
 ### Index
 
@@ -129,7 +129,7 @@ Even the official [Mozzila Documentation](https://developer.mozilla.org/en-US/do
 
 ![Documentation from Mozzilla](/assets/Screenshot_20210211_135522.png)
 
-## When should you use forEach over a for loop?
+<h2 name="when-to-use">When should you use forEach over a for loop?</h2>
 
 1. forEach keeps all variables inside the scope of the callback function. So variables outside retain the value. Below we can see that the **name** variable retains block scope for the callback function.
 
@@ -167,7 +167,7 @@ fruits.forEach(function(fruit){
 // logs orange
 ```
 
-## When should you not use a forEach over a for loop?
+<h2 name="when-not-to-use"> When should you not use a forEach over a for loop?</h2>
 
 I  use **forEach** loop wherever possible as it is more concise than the **for** loop. However, the only time to avoid a forEach loop is when we want to break out of a loop early using the **break statement** or pass the current iteration with a **continue statement**.
 
