@@ -39,19 +39,17 @@ The two major advantages provided by using components are
 
 ![MVC Flow Chart](https://cdn-images-1.medium.com/max/800/0*V2G68ibQa9P93WJA)
 
-
 Unlike other software architecture approaches such as [Model, View and Controller](https://www.wikiwand.com/en/Model%E2%80%93view%E2%80%93controller) (MVC), the component-based architecture includes both the View (the user interface) and the Controller (the application logic).
 
 ### What are Function Components?
 
-We can take the **JSX** we wrote earlier and refactor them into components of their own such that we can use them in multiple places.
+We can take the **JSX** we wrote earlier and refactor them into independent components which we can use in multiple places.
 
 Other than being able to use them in multiple places, it allows our code to be more readable.
 
-We have already seen a component before, the *App.js* is a **function component**. We can tell that a component is a function component by the structure of the component. The notation is the same as a **JavaScript** function.
+We have already seen a component before, the *App.js* is a **function component**. We can identify a function component by the structure of the component. The notation is the same as a **JavaScript** function.
 
 ![JavaScript Functional Component Example](https://cdn-images-1.medium.com/max/800/1*yNh-S2i0FNVr1qs_oHDE8A.png)
-
 
 ### Creating A Function Component
 
@@ -62,7 +60,6 @@ Within the *component* directory create a JavaScript file called *Nav.js.* This 
 Your file structure should look like this.
 
 ![File Structure](https://cdn-images-1.medium.com/max/800/1*WEBBs5Rdcgh42iUHQkf2hw.png)
-
 
 Within Nav.js, we can start creating our **function** component. There are three parts to every **function** component.
 
@@ -118,7 +115,7 @@ export const Nav = () => {
 }
 ```
 
-From *App.js* copy all the content from the navigation component we built into the *Nav.js* file such that it looks as follows. Everything from within the parent div with a class of *container*.
+From *App.js* copy all the content from the navigation component we built into the *Nav.js* file. Everything from within the parent div with a class of *container*.
 
 ```javascript
 import React from "react";
@@ -143,11 +140,9 @@ export const Nav = () => {
 };
 ```
 
-
-
 ### Importing the New Component into our App
 
-Within the *App.js* remove all the content that was copied earlier. We should be left with a parent div.
+Within the *App.js* remove all the content which was copied earlier. We should be left with a parent div.
 
 ```javascript
 function App() {
@@ -222,7 +217,7 @@ A named import must use the name we exported unlike in a default import. But we 
 import {file as myFileName} from './file2'
 ```
 
-Note that a module can only have **one default export** but can have an **unlimited amount of named exports**.
+Note:  a module can only have **one default export** but can have an **unlimited amount of named exports**.
 
 ### Function vs Class-Based Components
 
@@ -248,7 +243,7 @@ class Clock extends React.Component {
 }
 ```
 
-A class component is a component declared in the form of an **[ES6 Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).** The one major difference is that it calls a render method which invokes a return method. Whereas a function component has only a return method.
+A class component is a component declared in the form of an **[ES6 Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).** The one major difference is it calls a render method which invokes a return method. Whereas a function component has only a return method.
 
 We can convert a class component into a function component by removing:
 
@@ -306,13 +301,9 @@ export default App;
 
 ![Posts filled Component](https://cdn-images-1.medium.com/max/800/1*shR8ZOB0zWEllaV8tD0IJg.png)
 
-
-
 Now let’s create a reusable Post component called *Posts.js*and a stylesheet for it called Posts.css under styles.
 
 Create a directory called assets, we will store assets accessed by the CSS files here.
-
-
 
 ![Profile File Structure](https://cdn-images-1.medium.com/max/800/1*WnOlmqbUiwSFTrUSa3mCfQ.png)
 
@@ -348,7 +339,8 @@ Here we are splitting up the Post component into different sections then hard-co
 
 I prefer to layout the user interface before dealing with data.
 
-Let’s import the Post component into the *Posts.js*file. Since a component is reusable, let’s fill out the Post component with multiple Posts.
+Let’s import the Post component into the *Posts.js* file. Since a component is reusable, let’s fill out the Post component with multiple Posts.
+
 ```
 import React from "react";
 import "../styles/Posts.css";
@@ -367,13 +359,11 @@ export const Posts = () => {
     );
 };
 @safderareepattamannil
-
 ```
 
 Now it’s starting to come together!
 
 ![Final Product](https://cdn-images-1.medium.com/max/800/1*1yFhZCW8aJo96Cn63sXF0A.png)
-
 
 ### Conclusion
 
@@ -392,6 +382,4 @@ See you in the next one!
 [React Components](https://reactjs.org/docs/components-and-props.html)\
 [More Import/Export](https://javascript.info/import-export)
 
-
-
-If you would like to suggest topics for me to cover or would like to chat feel free to [email me](http://safderareepattamannil@gmail.com/). 
+If you would like to suggest topics for me to cover or would like to chat feel free to [email me](http://safderareepattamannil@gmail.com/).
