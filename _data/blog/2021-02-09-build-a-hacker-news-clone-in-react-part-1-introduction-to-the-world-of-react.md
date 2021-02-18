@@ -8,7 +8,6 @@ title: >-
 metaDescription: Tutorial series on React.js.
 thumbnail: /assets/hn.png
 ---
-
 ![1_yjH3SiDaVWtpBX0g_2q68g.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612810012755/wGckgPaYa.png)
 
 If you haven't already heard of React, most likely you've been living under a rock. React is a JavaScript library created by Facebook, it used to create beautiful functional user interfaces using a **component-based architecture** (we'll get to that in a second).
@@ -17,10 +16,10 @@ If you haven't already heard of React, most likely you've been living under a ro
 
 Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
 Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
-Part 3: [JSX and adding CSS To Your React App](link)
+Part 3: [JSX and adding CSS To Your React App](https://www.colorcoder.dev/react-hackernews-3)\
+Part 4: [Modular Components: Function vs Class-Based](https://www.colorcoder.dev/react-hackernews-4)
 
 ## What is React.js?
-
 
 React allows us to use reusable pieces of code to build web applications. Before React and other frontend frameworks, we were limited to using 'vanilla Javascript' and libraries such as jQuery to build out applications. This meant long development cycles and hard to catch errors and bugs. React can also be used to create cross-platform mobile applications via React Native (hopefully a tutorial on Native coming soon as well). React is used by multiple large companies which include Uber, Airbnb, Pinterest, Instagram and Netflix. 
 
