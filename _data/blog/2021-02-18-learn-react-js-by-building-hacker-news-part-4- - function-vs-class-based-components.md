@@ -19,7 +19,7 @@ If you ended up here without reading the previous sections, you can find all the
 
 Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
 Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
-Part 3: [JSX and adding CSS To Your React App](https://www.colorcoder.dev/link)\
+Part 3: [JSX and adding CSS To Your React App](https://www.colorcoder.dev/react-hackernews-3)\
 Part 4: [Modular Components: Function vs Class-Based](https://www.colorcoder.dev/react-hackernews-4)
 
 ![Building Hacker News in React.js](https://cdn-images-1.medium.com/max/800/0*rRE_S6ewdtge5nj9.png)
