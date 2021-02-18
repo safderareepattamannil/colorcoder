@@ -180,14 +180,14 @@ Let’s quickly go over how the import and export functionality works in **React
 
 A default import uses the following notation:
 
-```js
+```javascript
 // file1.js
 import fileAlias from './file2'
 ```
 
 A default import only works if we use a default export elsewhere
 
-```js
+```javascript
 // file2.js
 export default file2
 ```
@@ -198,21 +198,21 @@ In the import, the file can be named anything as an alias. In this case, we use 
 
 A named import uses the following notation:
 
-```js
+```javascript
 // file1.js
 import {file} from './file2'
 ```
 
 A named import only works if we use a named export elsewhere.
 
-```js
+```javascript
 // file2.js
 export const file2
 ```
 
 A named import must use the name we exported unlike in a default import. But we can use the ***as***key-word to give them another name on import.
 
-```js
+```javascript
 //file1.js
 import {file as myFileName} from './file2'
 ```
@@ -229,7 +229,7 @@ We will cover React Hooks in a later chapter but for now, all you need to know i
 
 We won’t be diving into much about class components but let’s take a look at what they look like.
 
-```js
+```javascript
 // Example taken from React docs
 class Clock extends React.Component {
   render() {
@@ -251,7 +251,7 @@ We can convert a class component into a function component by removing:
 2. The **extends React.Component**.
 3. The **render()** method.
 
-```js
+```javascript
 // Example taken from React docs
 function Clock(){
     return (
@@ -267,11 +267,11 @@ function Clock(){
 
 Now you should have a broad understanding of how components work. Let’s start building out our Hacker News clone. We will be building a component that contains all the posts. The Posts component will have nested Post components that represent the individual posts.
 
-![Sample Post Content](https://cdn-images-1.medium.com/max/800/1*ui-T1Z2PNpjeLCc1p3tmyg.png)
+![Sample Post Content](https://cdn-images-1.medium.com/max/800/1*ui-T1Z2PNpjeLCc1p3tmyg.png "Sample Post Content")
 
-Create a new file called *Posts.js*under the components directory. Posts will be a function component. In the styles directory create a file called Posts.css and import that into the component as well. You can find the CSS file content in the source code as I will not be including that in the snippets.
+Create a new file called *Posts.js* under the components directory. Posts will be a function component. In the styles directory create a file called Posts.css and import that into the component as well. You can find the CSS file content in the source code as I will not be including that in the snippets.
 
-```js
+```javascript
 import React from 'react'
 import '../styles/Posts.css'
 export const Posts = () => {
@@ -285,7 +285,7 @@ export const Posts = () => {
 
 We can **import** the Post component from within *App.js.*
 
-```
+```javascript
 import {Nav} from "./components/Nav"
 import { Posts } from "./components/Posts"
 function App() {
@@ -299,17 +299,17 @@ return (
 export default App;
 ```
 
-![Posts filled Component](https://cdn-images-1.medium.com/max/800/1*shR8ZOB0zWEllaV8tD0IJg.png)
+![Posts filled Component](https://cdn-images-1.medium.com/max/800/1*shR8ZOB0zWEllaV8tD0IJg.png "Posts filled Component")
 
 Now let’s create a reusable Post component called *Posts.js*and a stylesheet for it called Posts.css under styles.
 
 Create a directory called assets, we will store assets accessed by the CSS files here.
 
-![Profile File Structure](https://cdn-images-1.medium.com/max/800/1*WnOlmqbUiwSFTrUSa3mCfQ.png)
+![Profile File Structure](https://cdn-images-1.medium.com/max/800/1*WnOlmqbUiwSFTrUSa3mCfQ.png "Profile File Structure")
 
 Your Post Component should look as follows,
 
-```
+```javascript
 import React from "react";
 import '../styles/Post.css'
 
@@ -341,7 +341,7 @@ I prefer to layout the user interface before dealing with data.
 
 Let’s import the Post component into the *Posts.js* file. Since a component is reusable, let’s fill out the Post component with multiple Posts.
 
-```
+```javascript
 import React from "react";
 import "../styles/Posts.css";
 import {Post} from "./Post"
