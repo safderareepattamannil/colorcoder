@@ -20,7 +20,8 @@ If you ended up here without reading the previous sections, you can find all the
 
 Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
 Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
-Part 3: [JSX and adding CSS To Your React App](link)
+Part 3: [JSX and adding CSS To Your React App](https://www.colorcoder.dev/react-hackernews-3)\
+Part 4: [Modular Components: Function vs Class-Based](https://www.colorcoder.dev/react-hackernews-4)
 
 You can find all of the source code for the series at my [Github](https://github.com/safderareepattamannil/hackernewclone-react-tutorial). The source code can be found [here](https://github.com/safderareepattamannil/hackernewclone-react-tutorial/tree/part-3).
 
