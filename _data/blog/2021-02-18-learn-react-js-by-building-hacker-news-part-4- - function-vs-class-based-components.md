@@ -20,7 +20,7 @@ If you ended up here without reading the previous sections, you can find all the
 Part 1: [What is React?](https://www.colorcoder.dev/react-hackernews-1)\
 Part 2: [Create-React-App Internals](https://www.colorcoder.dev/react-hackernews-2)\
 Part 3: [JSX and adding CSS To Your React App](https://www.colorcoder.dev/link)\
-Part 4: Modular Components: Function vs Class-Based
+Part 4: [Modular Components: Function vs Class-Based](https://www.colorcoder.dev/react-hackernews-4)
 
 ![Building Hacker News in React.js](https://cdn-images-1.medium.com/max/800/0*rRE_S6ewdtge5nj9.png)
 
@@ -49,7 +49,7 @@ Other than being able to use them in multiple places, it allows our code to be m
 
 We have already seen a component before, the *App.js* is a **function component**. We can identify a function component by the structure of the component. The notation is the same as a **JavaScript** function.
 
-![JavaScript Functional Component Example](https://cdn-images-1.medium.com/max/800/1*yNh-S2i0FNVr1qs_oHDE8A.png)
+![JavaScript Functional Component Example](https://cdn-images-1.medium.com/max/800/1*yNh-S2i0FNVr1qs_oHDE8A.png "JavaScript Functional Component Example")
 
 ### Creating A Function Component
 
